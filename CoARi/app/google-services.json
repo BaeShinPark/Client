@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1081169223994",
+    "project_id": "coari-309820",
+    "storage_bucket": "coari-309820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081169223994:android:803e9748455aed93c2b003",
+        "android_client_info": {
+          "package_name": "com.cse.coari"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081169223994-kr1kdjrdhe0telvnoas6mr8j22u3mcer.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.cse.coari",
+            "certificate_hash": "ed4825d7f9b8692a6b8816f71c32326befae82fc"
+          }
+        },
+        {
+          "client_id": "1081169223994-8o7r2sj8h8hvacka420fvlr2qql1m13q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtLIXpWXHnqcFoamexFD3qTRo4e_aniVM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081169223994-8o7r2sj8h8hvacka420fvlr2qql1m13q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

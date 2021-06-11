@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="80dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/deu"
+    android:alpha="0.8">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_1"
+            android:textSize="4dp"
+            android:alpha="1"
+            android:textColor="@color/white"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:layout_margin="2dp"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:textColor="@color/white"
+            android:textSize="5dp"
+            android:layout_margin="2dp"
+            android:alpha="1"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/tv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:alpha="1"
+            android:fontFamily="@font/nanum_barun_gothic_bold"
+            android:textSize="4dp"
+            tools:ignore="SmallSp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="3dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal" >
+
+        <android.widget.Button
+            android:id="@+id/button_navi"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_gravity="center_horizontal"
+            android:text="내비게이션"
+            android:alpha="1"
+            android:textSize="4dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginRight="2dp"
+            android:layout_weight="1"
+            android:background="@color/dark_blue"
+            />
+
+        <android.widget.Button
+            android:id="@+id/button_exit"
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="4dp"
+            android:text="닫기"
+            android:clickable="true"
+            android:layout_weight="1"
+            android:focusable="true"
+            android:background="@color/dark_blue"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
