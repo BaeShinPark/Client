@@ -38,7 +38,7 @@
   2. Filament에서 제공 하는 사실적인 물리적 기반 렌더러
   3. 안드로이드 스튜디오 플러그인 3D 자산을 가져보기 및 구축
 
-<img src="AR.png">
+<img src="ar.png">
 
 ## Environment
 
