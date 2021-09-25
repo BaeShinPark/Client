@@ -152,18 +152,12 @@ open class ARDistance_show : ArFragment() {
         }
     }
 
-    /**
-     * In this case, we want to support the playback of one video at a time.
-     * Therefore, if ARCore loses current active image FULL_TRACKING we will pause the video.
-     * If the same image gets FULL_TRACKING back, the video will resume.
-     * If a new image will become active, then the corresponding video will start from scratch.
-     */
+ 
     override fun onUpdate(frameTime: FrameTime) {
         val frame = arSceneView.arFrame ?: return
 
         val updatedAugmentedImages = frame.getUpdatedTrackables(AugmentedImage::class.java)
-
-        // If current active augmented image isn't tracked anymore and video playback is started - pause video playback
+        
         val nonFullTrackingImages = updatedAugmentedImages.filter { it.trackingMethod != AugmentedImage.TrackingMethod.FULL_TRACKING }
         activeAugmentedImage?.let { activeAugmentedImage ->
             if (isArVideoPlaying() && nonFullTrackingImages.any { it.index == activeAugmentedImage.index }) {
