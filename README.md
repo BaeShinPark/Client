@@ -25,6 +25,8 @@
   - Retrofit 객체를 싱글턴으로 구현하였다.
   - 필요에 따라 데이터셋에 맞는 값을 반환하는 콜백함수를 호출하였다.
 
+<img src="client.png">
+
 ## AR 
 
 - [ARCore](https://developers.google.com/ar/develop)
@@ -36,7 +38,7 @@
   2. Filament에서 제공 하는 사실적인 물리적 기반 렌더러
   3. 안드로이드 스튜디오 플러그인 3D 자산을 가져보기 및 구축
 
-
+<img src="AR.png">
 
 ## Environment
 
