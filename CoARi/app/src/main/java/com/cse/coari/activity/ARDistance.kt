@@ -30,7 +30,7 @@ class ARDistance : AppCompatActivity(), SensorEventListener {
     private var mAccelerometer: Sensor? = null
     private var mMagnetField: Sensor? = null
 
-    /*Sensor variables*/
+    /*Sensor 변수 설정 */
     private val mAccValues = FloatArray(3)
     private val mMagnetValues = FloatArray(3)
     private val mR = FloatArray(9)
@@ -39,7 +39,7 @@ class ARDistance : AppCompatActivity(), SensorEventListener {
     private var magnetRunning = false
     val REQUEST_IMAGE_CAPTURE = 1
 
-    /* distance &  */
+    /* distance 변수  */
     var distance: Double = 0.0
     var azimuthDegrees = 0f
     var direction: String? = null
@@ -47,7 +47,7 @@ class ARDistance : AppCompatActivity(), SensorEventListener {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation)
-
+        /* 가속도 센서, 자기장 센서 객체 생성*/
         mAccelerometer = sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER)
         mMagnetField = sensorManager.getDefaultSensor(Sensor.TYPE_MAGNETIC_FIELD)
 
@@ -84,14 +84,14 @@ class ARDistance : AppCompatActivity(), SensorEventListener {
         if(accRunning || magnetRunning) {
             SensorManager.getRotationMatrix(mR, null, mAccValues, mMagnetValues)
 
-            azimuthDegrees = ((Math.toDegrees(SensorManager.getOrientation(mR, mOrientation)[0].toDouble()) + 360).toInt() % 360).toFloat()
+            azimuthDegrees = ((Math.toDegrees(SensorManager.getOrientation(mR, mOrientation)[0].toDouble()) + 360).toInt() % 360).toFloat() // 방위각 
 
             var pose_x = 1.1
             var destinationAnchorPost = 0.8
 
             distance = pose_x - destinationAnchorPost * 8 // 1px = 8cm
 
-            if (azimuthDegrees >= 0 && azimuthDegrees < 180) {
+            if (azimuthDegrees >= 0 && azimuthDegrees < 180) { // 방위각을 사용하여 방향 계산(좌우)
                 if(distance < 0) direction = "right"
                 else direction = "left"
 
